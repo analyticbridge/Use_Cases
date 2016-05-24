@@ -1,0 +1,10 @@
+#!/bin/sh
+
+#start client 
+flume-ng agent -n client --conf . -f client.conf 
+
+# start collector 
+flume-ng agent -n collector1 --conf . -f collector1.conf
+
+# start collector2
+flume-ng agent -n collector2 --conf . -f collector2.conf
